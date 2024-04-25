@@ -27,6 +27,15 @@ header>div>a {
   background-color: var(--color-primary);
 }
 
+/* media query navbar */
+@media screen and (max-width: 640px) {
+  .contenedorElementosNavbar {
+    flex-direction: column;
+  }
+}
+/* media query navbar */
+
+
 .contenedorItems {
   display: flex;
   padding-top: 1rem;
@@ -82,6 +91,7 @@ button>a {
   text-decoration: none;
   color: var(--color-default);
 }
+
 /* END HEADER*/
 
 /*MAIN*/
@@ -94,6 +104,7 @@ button>a {
   box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* media query banner */
 @media only screen and (max-width: 1200px) {
   .contenedorBanner {
     display: block;
@@ -108,6 +119,7 @@ button>a {
     overflow: hidden;
   }
 }
+/* media query banner */
 
 .contenedorTextoBanner {
   padding: 16px;
@@ -123,7 +135,7 @@ button>a {
   border-radius: 8px;
 }
 
-.contenedorImgBanner{
+.contenedorImgBanner {
   display: flex;
 }
 
@@ -177,7 +189,6 @@ button>a {
   border-radius: 4px;
   margin-top: 16px;
 }
-
 /*END MAIN*/
 
 
@@ -193,6 +204,7 @@ button>a {
   align-items: center;
 }
 
+/* media query footer */
 @media only screen and (max-width: 1200px) {
   .contenedorFooter {
     display: block;
@@ -211,11 +223,12 @@ button>a {
     overflow: hidden;
   }
 }
+/* media query footer */
+
 
 /*FOOTER*/
 
-/*FORMULARIOS*/
-
+/*CSS FORMULARIOS*/
 .seccionFormulario {
   display: flex;
   justify-content: center;
@@ -248,18 +261,13 @@ button>a {
   text-align: center;
 }
 
-/*FORMULARIO LOGIN*/
-
-/*END FORMULARIO LOGIN*/
-
 /*FORMULARIO REGISTRO*/
-.formularioRegristro h5:hover{
+.formularioRegristro h5:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-3%);
   border-radius: 8px;
   background-color: #fff;
 }
-
 /*END FORMULARIO REGISTRO*/
 
 
