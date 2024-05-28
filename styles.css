@@ -33,6 +33,7 @@ header>div>a {
     flex-direction: column;
   }
 }
+
 /* media query navbar */
 
 
@@ -119,6 +120,7 @@ button>a {
     overflow: hidden;
   }
 }
+
 /* media query banner */
 
 .contenedorTextoBanner {
@@ -189,6 +191,7 @@ button>a {
   border-radius: 4px;
   margin-top: 16px;
 }
+
 /*END MAIN*/
 
 
@@ -223,52 +226,72 @@ button>a {
     overflow: hidden;
   }
 }
+
 /* media query footer */
 
 
 /*FOOTER*/
 
 /*CSS FORMULARIOS*/
-.seccionFormulario {
+
+/*FORMULARIO REGISTRO*/
+.seccionFormularioRegistro {
+  padding: 2rem;
   display: flex;
   justify-content: center;
 }
 
-.seccionFormulario div {
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.contenedorFormulario {
+.formularioRegristro {
   background-color: var(--color-primary);
-  margin: 16px;
-  padding: 8px;
+  padding: 1rem;
   border-radius: 8px;
 }
 
-.contenedorFormulario h3 {
-  text-align: center;
+.formularioRegristro div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
 }
 
-.formularioRegristro a {
-  text-align: center;
+/*END FORMULARIO REGISTRO*/
+
+/*FORMULARIO LOGIN*/
+.seccionFormularioLogin {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formularioLogin {
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.formularioLogin div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.formularioLogin a {
   text-decoration: none;
-  color: #000;
-}
-
-.formularioRegristro p {
+  color: #212529;
   text-align: center;
 }
 
-/*FORMULARIO REGISTRO*/
-.formularioRegristro h5:hover {
+.formularioLogin button{
+  border-radius: 8px;
+  border: none;
+}
+
+.formularioLogin button:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3%);
+  transform: translateY(-5%);
   border-radius: 8px;
   background-color: #fff;
 }
-/*END FORMULARIO REGISTRO*/
+/*END FORMULARIO LOGIN*/
 
 
 /*FORMULARIOS*/

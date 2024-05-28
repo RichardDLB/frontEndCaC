@@ -39,28 +39,29 @@
 
   <!-- MAIN SECTIO -->
   <main>
-    <section class="seccionFormulario">
-      <div class="contenedorFormulario">
-        <form action="" class="formularioRegristro">
-          <h3>Login</h3>
-          <br>
-          <div>
-            <label for="">
-              <h5>Nombre</h5>
-            </label>
-            <input type="text" placeholder="Nombre">
-          </div>          
-          <div>
-            <label for="">
-              <h5>Contraseña</h5>
-            </label>
-            <input type="password" placeholder="Contraseña ">
-          </div>         
-          <br>
-          <p>¡No recuerdas tu pasword o email!</p>
-          <a href=""><h5>Aceptar</h5></a>
-        </form>
-      </div>
+    <section class="seccionFormularioLogin">
+      <form action="#" class="formularioLogin">
+        <h3>Login</h3>
+        <br>
+        <div>
+          <label for="username">
+            <h5>Usuario</h5>
+          </label>
+          <input type="text" placeholder="Nombre" id="username">
+        </div>
+        <div>
+          <label for="password">
+            <h5>Contraseña</h5>
+          </label>
+          <input type="password" placeholder="Contraseña" id="password">
+        </div>
+        <br>
+        <a href="">
+          <p>¡No recuerdas tu password o email!</p>
+        </a>
+        <div style="justify-content: center;"><button type="submit" id="btnSubmit">Aceptar</button></div>
+      </form>
+      <script src="validacionLogin.js"></script>
     </section>
 
   </main>
@@ -68,21 +69,21 @@
 
   <!-- FOOTER SECTIO -->
   <footer>
-      <div class="contenedorFooter">
-        <div class="textoFooter">
-          <h3>Contactenos</h3>
-          <p>Teléfono: 1138990011</p>
-          <p>Dirección: Buenos Aires, Argentina</p>
-          <p>Email: TrenesLA@trenesLA.com</p>
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47498708405!2d-58.59811385940902!3d-34.61543034166237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1712920150918!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <p></p>
+    <div class="contenedorFooter">
+      <div class="textoFooter">
+        <h3>Contactenos</h3>
+        <p>Teléfono: 1138990011</p>
+        <p>Dirección: Buenos Aires, Argentina</p>
+        <p>Email: TrenesLA@trenesLA.com</p>
       </div>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47498708405!2d-58.59811385940902!3d-34.61543034166237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1712920150918!5m2!1ses-419!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p></p>
+    </div>
   </footer>
   <!-- END FOOTER -->
 
