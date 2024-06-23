@@ -241,13 +241,13 @@ button>a {
   justify-content: center;
 }
 
-.formularioRegristro {
+.formularioRegistro {
   background-color: var(--color-primary);
   padding: 1rem;
   border-radius: 8px;
 }
 
-.formularioRegristro div {
+.formularioRegistro div {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
@@ -280,17 +280,6 @@ button>a {
   text-align: center;
 }
 
-.formularioLogin button{
-  border-radius: 8px;
-  border: none;
-}
-
-.formularioLogin button:hover{
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5%);
-  border-radius: 8px;
-  background-color: #fff;
-}
 /*END FORMULARIO LOGIN*/
 
 

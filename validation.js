@@ -4,18 +4,13 @@ const username = document.querySelector("#username")
 
 const password = document.querySelector("#password")
 
-const btn = document.querySelector("#btnSubmit")
+const btnLogin = document.querySelector("#btnSubmit")
 
-btn.addEventListener("click", function(event){
-    if (username.value == ""){
-        alert("Agregar un nombre de usuario")
-    }
-    if (password.value == ""){
-        alert("Agregar una contraseña")
+btnLogin.addEventListener("click", function (event) {
+    if (username.value == "" || password.value == "") {
+        alert("Agregar usuario y contraseña")
     }
 });
 
 // <--END LOGIN VALIDATION-->
 
-// <--REGISTRATION VALIDATION-->
-// <--END REGISTRATION VALIDATION-->

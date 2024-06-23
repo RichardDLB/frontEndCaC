@@ -32,7 +32,7 @@
         </ul>
       </nav>
       <!-- END NAVBAR -->
-      <a class="login" href="login.html">Login</a>
+      <a type="submit" class="login" href="login.html">Login</a>
     </div>
   </header>
   <!-- END HEADER -->
@@ -40,44 +40,50 @@
   <!-- MAIN SECTIO -->
   <main>
     <section class="seccionFormularioRegistro">
-      <form action="" class="formularioRegristro">
+      <form action="#" class="formularioRegistro">
         <h3>Registro</h3>
         <br>
         <div>
-          <label for="">
+          <label for="userRegister">
             <h5>Nombre</h5>
           </label>
-          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Nombre" id="userRegister" required>
         </div>
         <div>
-          <label for="">
+          <label for="lastName">
             <h5>Apellido</h5>
           </label>
-          <input type="text" placeholder="Apellido">
+          <input type="text" placeholder="Apellido" id="lastName" required>
         </div>
         <div>
-          <label for="">
+          <label for="email">
+            <h5>Email</h5>
+          </label>
+          <input type="email" placeholder="Email" id="email" required>
+        </div>
+        <div>
+          <label for="usuario">
             <h5>Usuario</h5>
           </label>
-          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Usuario" id="usuario" required>
         </div>
         <div>
-          <label for="">
+          <label for="contraseña">
             <h5>Contraseña</h5>
           </label>
-          <input type="password" placeholder="Contraseña">
+          <input type="password" placeholder="Contraseña" id="contraseña" required>
         </div>
         <div>
-          <label for="">
+          <label for="fenaci">
             <h5>Fecha de nacimiento</h5>
           </label>
-          <input type="date" placeholder="Fecha de nacimiento">
+          <input type="date" placeholder="Fecha de nacimiento" id="fenaci" required>
         </div>
         <div>
-          <label for="">
+          <label for="country">
             <h5>País</h5>
           </label>
-          <select name="" id="">
+          <select name="country" id="country" required>
             <option value="">Argentina</option>
             <option value="">Uruguay</option>
             <option value="">Bolivia</option>
@@ -91,10 +97,9 @@
         </div>
         <br>
         <p>Ninguno de tus datos se compartiran con terceros</p>
-        <div style="justify-content: center;"><button type="submit">Aceptar</button></div>
+        <div style="justify-content: center;"><button type="submit" id="btnRegistro">Aceptar</button></div>
       </form>
     </section>
-
   </main>
   <!-- END MAIN -->
 
@@ -125,6 +130,9 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <!-- LINK JS BOOTSTRAP -->
+
+  <script src="validationRegistro.js"></script>
+
 
 </body>
 
