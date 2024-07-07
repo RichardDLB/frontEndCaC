@@ -28,7 +28,7 @@
         <ul class="contenedorItems">
           <li><a href="">Tickets</a></li>
           <li><a href="">Destinos</a></li>
-          <li><a href="">Registrarme</a></li>
+          <li><a href="registro.html">Registrarme</a></li>
         </ul>
       </nav>
       <!-- END NAVBAR -->
@@ -40,61 +40,63 @@
   <!-- MAIN SECTIO -->
   <main>
     <section class="seccionFormularioRegistro">
-      <form action="#" class="formularioRegistro">
+      <form action="#" class="formularioRegistro" id="formularioRegistro">
         <h3>Registro</h3>
         <br>
         <div>
-          <label for="userRegister">
+          <label for="nombre">
             <h5>Nombre</h5>
           </label>
-          <input type="text" placeholder="Nombre" id="userRegister" name="nombre" required>
+          <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
         </div>
         <div>
-          <label for="lastName">
+          <label for="apellido">
             <h5>Apellido</h5>
           </label>
-          <input type="text" placeholder="Apellido" id="lastName" name="apellido" required>
-        </div>
-        <div>
-          <label for="email">
-            <h5>Email</h5>
-          </label>
-          <input type="email" placeholder="Email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="usuario">
-            <h5>Usuario</h5>
-          </label>
-          <input type="text" placeholder="Usuario" id="usuario" name="username" required>
-        </div>
-        <div>
-          <label for="contraseña">
-            <h5>Contraseña</h5>
-          </label>
-          <input type="password" placeholder="Contraseña" id="contraseña" name="password" required>
+          <input type="text" placeholder="Apellido" id="apellido" name="apellido" required>
         </div>
         <div>
           <label for="fenaci">
             <h5>Fecha de nacimiento</h5>
           </label>
-          <input type="date" placeholder="Fecha de nacimiento" id="fenaci" name="fechaNac" required>
+          <input type="date" placeholder="Fecha de nacimiento" id="fenaci" name="fenaci" required>
         </div>
         <div>
-          <label for="country">
-            <h5>País</h5>
+          <label for="pais">
+              <h5>País</h5>
           </label>
-          <select id="country" name="pais" required>
-            <option value="">Argentina</option>
-            <option value="">Uruguay</option>
-            <option value="">Bolivia</option>
-            <option value="">Brazil</option>
-            <option value="">Venezuela</option>
-            <option value="">Haiti</option>
-            <option value="">Colombia</option>
-            <option value="">Ecuador</option>
-            <option value="">Perú</option>
+          <select id="pais" name="pais" required>
+              <option value="argentina">Argentina</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="brazil">Brazil</option>
+              <option value="venezuela">Venezuela</option>
+              <option value="haiti">Haiti</option>
+              <option value="colombia">Colombia</option>
+              <option value="ecuador">Ecuador</option>
+              <option value="peru">Perú</option>
           </select>
+      </div>
+        <div>
+          <label for="email">
+            <h5>Email</h5>
+          </label>
+          <input type="email" placeholder="Correo" id="email" name="email" required>
         </div>
+        <div>
+          <label for="usuario">
+            <h5>Usuario</h5>
+          </label>
+          <input type="text" placeholder="Usuario" id="usuario" name="usuario" required>
+        </div>
+        <div>
+          <label for="contraseña">
+            <h5>Contraseña</h5>
+          </label>
+          <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" required>
+        </div>
+        
+        
         <br>
         <p>Ninguno de tus datos se compartiran con terceros</p>
         <div style="justify-content: center;"><button type="submit" id="btnRegistro">Aceptar</button></div>
@@ -132,6 +134,7 @@
   <!-- LINK JS BOOTSTRAP -->
 
   <script src="validationRegistro.js"></script>
+  <script src="registro.js"></script>
 
 
 </body>

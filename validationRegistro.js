@@ -1,48 +1,23 @@
-// <--REGISTRATION VALIDATION-->
-// const userRegister = document.querySelector("#userRegister")
 
-// const lastName = document.querySelector("#lastName")
-
-// const email = document.querySelector("#email")
-
-// const usuario = document.querySelector("#usuario")
-
-// const contraseña = document.querySelector("#contraseña")
-
-// const fenaci = document.querySelector("#fenaci")
-
-// const country = document.querySelector("#country")
-
-// const btnRegistro = document.querySelector("#btnRegistro")
-
-
-// btnRegistro.addEventListener("click", function (event) {
-//     if (userRegister.value == "" || lastName.value == "" || email.value == "" 
-//         || usuario.value == "" || contraseña.value == "" || fenaci.value == "") {
-//         alert("todos los campos deben estar completos")
-//     }
-// });
-// <--END REGISTRATION VALIDATION-->
-
-
-// <--REGISTRATION VALIDATION-->
 
 document.addEventListener("DOMContentLoaded", () => {
-    const userRegister = document.querySelector("#userRegister");
-    const lastName = document.querySelector("#lastName");
-    const email = document.querySelector("#email");
-    const usuario = document.querySelector("#usuario");
-    const contraseña = document.querySelector("#contraseña");
-    const fenaci = document.querySelector("#fenaci");
-    const btnRegistro = document.querySelector("#btnRegistro");
+    const nombre = document.getElementById("nombre");
+    const apellido = document.getElementById("apellido");
+    const fenaci = document.getElementById("fenaci");
+    const pais = document.getElementById("pais");
+    const email = document.getElementById("email");
+    const usuario = document.getElementById("usuario");
+    const contraseña = document.getElementById("contraseña");
 
     const fields = [
-        { field: userRegister, name: "Nombre de usuario" },
-        { field: lastName, name: "Apellido" },
-        { field: email, name: "Correo electrónico" },
-        { field: usuario, name: "Usuario" },
-        { field: contraseña, name: "Contraseña" },
+        { field: nombre, name: "Nombre" },
+        { field: apellido, name: "Apellido" },
         { field: fenaci, name: "Fecha de nacimiento" },
+        { field: pais, name: "pais" },
+        { field: email, name: "email" },
+        { field: usuario, name: "usuario" },
+        { field: contraseña, name: "contraseña" },
+
     ];
 
     btnRegistro.addEventListener("click", function (event) {

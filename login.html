@@ -28,7 +28,7 @@
         <ul class="contenedorItems">
           <li><a href="">Tickets</a></li>
           <li><a href="">Destinos</a></li>
-          <li><a href="registrarme.html">Registrarme</a></li>
+          <li><a href="registro.html">Registrarme</a></li>
         </ul>
       </nav>
       <!-- END NAVBAR -->
@@ -40,20 +40,20 @@
   <!-- MAIN SECTIO -->
   <main>
     <section class="seccionFormularioLogin">
-      <form action="#" class="formularioLogin">
+      <form action="#" class="formularioLogin" id="formularioLogin">
         <h3>Login</h3>
         <br>
         <div>
-          <label for="username">
+          <label for="usuario">
             <h5>Usuario</h5>
           </label>
-          <input type="text" placeholder="Nombre" id="username" name="user" required>
+          <input type="text" placeholder="Nombre" id="usuario" name="usuario" required>
         </div>
         <div>
-          <label for="password">
+          <label for="contraseña">
             <h5>Contraseña</h5>
           </label>
-          <input type="password" placeholder="Contraseña" id="password" name="pass" required>
+          <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña" required>
         </div>
         <br>
         <a href="">
@@ -91,7 +91,8 @@
     crossorigin="anonymous"></script>
   <!-- LINK JS BOOTSTRAP -->
 
-  <script src="validation.js"></script>
+  <script src="validationLogin.js"></script>
+  <script src="login.js"></script>
 
 
 </body>

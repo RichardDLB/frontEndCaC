@@ -1,13 +1,13 @@
 // <--LOGIN VALIDATION-->
 
-const username = document.querySelector("#username")
+const usuario = document.querySelector("#usuario")
 
-const password = document.querySelector("#password")
+const contraseña = document.querySelector("#contraseña")
 
 const btnLogin = document.querySelector("#btnSubmit")
 
 btnLogin.addEventListener("click", function (event) {
-    if (username.value == "" || password.value == "") {
+    if (usuario.value == "" || contraseña.value == "") {
         alert("Agregar usuario y contraseña")
     }
 });
