@@ -32,7 +32,7 @@ document.getElementById('formularioRegistro').addEventListener('submit', functio
         .then(function(data) {
             console.log('Datos enviados exitosamente:', data);
             alert("El usuario se registro exitosamente")
-            window.location.href = 'index.html'; // Redirecciona a index.html
+            window.location.href = 'login.html'; // Redirecciona a login.html
         })
         .catch(function(error) {
             console.error('Error:', error);

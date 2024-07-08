@@ -1,25 +1,22 @@
 document.getElementById('formularioLogin').addEventListener('submit', function (event) {
   event.preventDefault();
 
+  const usuario = document.getElementById('usuario').value;
+  const contraseña = document.getElementById('contraseña').value;
 
-  var formData = new FormData(this);
+  console.log('Envío de formulario iniciado...'); // Imprime un mensaje cuando se inicia el envío
 
-  fetch('http://localhost:8080/trenAlSur/login', {
+  fetch('http://localhost:8080/trenAlSur/user', {
     method: 'POST',
-    body: formData,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ usuario, contraseña })
   })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Error en la solicitud: ' + response.status);
-      }
-      return response.json(); // Parsea la respuesta como JSON
-    })
+    .then(response => response.json()) // Asumiendo que el servidor responde con JSON
     .then(data => {
-      console.log('Respuesta:', data); // Maneja la respuesta aquí
+      window.location.href = "usuarioIndex.html"; // Redirecciona al usuario a su página
+
     })
-    .catch(error => {
-      console.error('Error:', error); // Maneja errores aquí
-    });
-
-
+    .catch(error => console.error('Error:', error));
 });
