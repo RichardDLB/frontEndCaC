@@ -284,3 +284,22 @@ button>a {
 
 
 /*FORMULARIOS*/
+
+
+/*INDEXUSUARIO*/
+
+.contenedorBannerUsuario {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color-primary);
+  margin: 2rem;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorImgBannerUsuario{
+  width: 50%;
+}
+
+/*INDEXUSUARIO*/
